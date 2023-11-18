@@ -1,0 +1,36 @@
+/* // CSS code for mobile devices // */
+/* Background design */
+
+body {
+    font-size: 14px;
+    background: url("/res/bg.jpg") no-repeat center/cover;
+}
+
+/* Log-in box  */
+
+#login-box {
+    width: 260px;
+    padding: 25px 15px;
+}
+
+/* Log-in button */
+
+#btn-log-in {
+    width: 217px;
+}
+
+/* Forgot password */
+
+#forgot-pass {
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    left: 5px;
+    margin-left: 2px;
+}
+
+/* Utility classes */
+
+.font-s {
+    font-size: 13px;
+}

@@ -1,0 +1,153 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-color: #cec9c9;
+}
+
+/* Background design */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: url("/res/bg.jpg") no-repeat center/cover;
+}
+
+/* Log-in box  */
+
+#login-box {
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+/* Log-in heading */
+
+#h-login {
+    margin-bottom: 25px;
+}
+
+/* Username and Password box */
+
+.input-box {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    display: flex;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.input-box:nth-child(1) {
+    margin-bottom: 25px;
+}
+
+.text-part {
+    padding: 10px 5px 10px 15px;
+    user-select: none; 
+}
+
+.input-part {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.input-part:focus {
+    outline: none;
+}
+
+.input-part::selection {
+    background-color: transparent;
+}
+
+.input-part::-ms-reveal {
+    filter: invert(100%);
+}
+
+
+/* Line before log-in button */
+
+#imp-1 {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#remember-me, #forgot-pass {
+    font-size: 14px;
+}
+
+#cbox {
+    height: 12px;
+}
+
+#forgot-pass {
+    margin-left: 11px;
+}
+
+/* Login button */
+
+#btn-log-in {
+    display: block;
+    margin: 10px auto 15px auto;
+    padding: 10px;
+    width: 260px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+/* Line after log-in button */
+
+
+
+/* Links */
+
+#sign-up-link, #forgot-pass {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#forgot-pass {
+    font-weight: normal;
+}
